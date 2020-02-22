@@ -1,0 +1,42 @@
+
+======================================
+URLs
+======================================
+
+https://wp-eye-sea-jci.codeanyapp.com/
+
+https://wpmain-jci.codeanyapp.com/wp-login.php
+
+https://wpmain-jci.codeanyapp.com/?post_type=expense
+
+https://wpmain-jci.codeanyapp.com/wp-json/test/v1/create
+
+
+git remote add origin https://github.com/jcicaro/eyesea-business.git
+
+======================================
+Notes
+======================================
+
+The ServiceNow integration info is in wp-config.php
+
+
+======================================
+Manual
+======================================
+
+- Create Custom Fields
+- Set up user and roles
+- Create page for forms
+- Create page for gallery, set the template as "Gallery" on the pages
+
+
+======================================
+Temp
+======================================
+
+<?php if($main_image) {  ?>
+					<img class="img-fluid w-100 img-mh-md" src="<?php echo esc_url($main_image['sizes']['large']); ?>" alt="<?php echo esc_attr($main_image['alt']); ?>" data-aos="fade" data-aos-delay="100">
+				<?php } else { ?>
+					<img class="img-fluid w-100 img-mh-md" src="<?php the_sub_field('image_url'); ?>" alt="" data-aos="fade" data-aos-delay="100">
+				<?php } ?>

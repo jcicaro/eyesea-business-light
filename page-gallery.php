@@ -36,7 +36,7 @@ get_header(); ?>
 			$img_size = 'thumbnail';
 			// sizes: thumbnail, medium, large, full
 			if ($img_count == 1) { $col_num = 12; $img_size = 'large'; }
-			else if ($img_count == 4) { $col_num = 6; $img_size = 'medium'; }
+			else if ($img_count == 4) { $col_num = 6; $img_size = 'large'; } // was 'medium'
 
 			ESS_Component::the_gallery_section($images, $reverse_order_class, $col_num, $img_size);
 

@@ -113,7 +113,7 @@ class ESS_Component {
 		
 <div class="bg-white contact-clean">
     <form data-aos="fade" data-bss-recipient="651af00c1422ae94ed09d3346eb678d9" data-bss-subject="From your website ">
-        <h2 class="text-center">Contact Icy</h2>
+        <h2 class="text-center">Get in touch with me!</h2>
         <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
         <div class="form-group"><input class="border-dark form-control is-invalid" type="email" name="email" placeholder="Email"></div>
         <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>

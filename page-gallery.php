@@ -16,6 +16,11 @@ get_header(); ?>
 	
 	<?php ESS_Component::the_gallery_nav(); ?>
 	
+	<?php if (get_field('gallery_header')) { ?>
+	<div class="text-center">
+		<?php the_field('gallery_header'); ?>	
+	</div>
+	<?php } ?>
 	
 	<?php
 	
@@ -47,7 +52,15 @@ get_header(); ?>
 	endif;
 	?>
 	
+	<?php if (get_field('gallery_footer')) { ?>
+	<div class="mt-3 text-center">
+		<?php the_field('gallery_footer'); ?>	
+	</div>
+	<?php } ?>
+	
 </div>
+
+	
 
 
 <?php get_footer(); ?>

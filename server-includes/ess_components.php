@@ -200,6 +200,7 @@ class ESS_Component {
 	public static function the_gallery_section($images, $reverse_order_class, $col_num, $img_size) { 
 		?>
 		
+		
 		<section class="home-item row no-gutters bg-black">
 		
 			<div class="home-item-txt-container col-md-6 p-5 d-flex flex-column align-self-center p-5 <?= $reverse_order_class ?>"  data-aos="fade-right" data-aos-delay="100">
@@ -217,7 +218,7 @@ class ESS_Component {
 
 									<div class="col-<?php echo $col_num; ?>">
 										<a href="<?php echo esc_url($image['sizes']['large']); // esc_url($image['url']); ?>" data-toggle="lightbox" data-title="<?php echo esc_attr($image['title']); ?>">
-										 <img class="img-fluid w-100 h-100" style="object-fit: cover;" src="<?php echo esc_url($image['sizes'][$img_size]); ?>" alt="<?php echo esc_attr($image['alt']); ?>" data-aos="fade-in" data-aos-delay="100" />
+										 	<img class="img-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" src="<?php echo esc_url($image['sizes'][$img_size]); ?>" alt="<?php echo esc_attr($image['alt']); ?>" data-aos="fade-in" data-aos-delay="100" />
 										</a>
 									</div>
 

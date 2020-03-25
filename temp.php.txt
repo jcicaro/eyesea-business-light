@@ -1,3 +1,15 @@
+<div class="hovereffect col-<?php echo $col_num; ?>">
+										
+										 <img class="img-fluid w-100 h-100" style="object-fit: cover;" src="<?php echo esc_url($image['sizes'][$img_size]); ?>" alt="<?php echo esc_attr($image['alt']); ?>" data-aos="fade-in" data-aos-delay="100" />
+										
+										<div class="overlay">
+										   <a class="info" href="<?php echo esc_url($image['sizes']['large']); // esc_url($image['url']); ?>" data-toggle="lightbox" data-title="<?php echo esc_attr($image['title']); ?>">View image</a>
+										</div>
+									</div>
+
+
+
+
 <?php 
 
 // get_template_part('content'); 
